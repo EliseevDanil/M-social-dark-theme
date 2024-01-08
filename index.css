@@ -8,6 +8,9 @@
   --main-color-blue: rgb(51, 154, 240);
   --main-color-blue-opacity: rgba(24, 100, 171, 0.45);
   --main-color-font-blue: rgb(208, 235, 255);
+  --main-color-priority-3: rgb(37, 38, 41);
+  --main-color-priority-5: rgb(147 16 77);
+  --main-color-priority-6: rgb(179, 13, 13);
 }
 
 #main,
@@ -94,6 +97,9 @@ input {
 #main-menu {
   background-color: var(--second-color-dark) !important;
 }
+#main-menu li {
+  padding: 0px !important;
+}
 
 #new-object {
   border-radius: 0.5rem !important;
@@ -130,12 +136,14 @@ hr {
   background: var(--main-color-dark) !important;
 }
 
-#history div ul {
-  border-bottom: 0.0625rem solid var(--second-color-gray2) !important;
-  padding-left: 0 !important;
+.tabs ul li a.selected,
+#history ul li a.selected {
+  color: var(--main-color-font-blue) !important;
+  background: var(--main-color-blue-opacity) !important;
+  border-bottom: 0.0625rem solid var(--main-color-blue) !important;
 }
-
-#history div ul li a {
+.tabs ul li a,
+#history ul li a {
   background: none !important;
   border: none !important;
   padding-bottom: 10px !important;
@@ -143,11 +151,10 @@ hr {
   border-radius: 0 !important;
   border-bottom: 0.0625rem solid transparent !important;
 }
-
-#history div ul li a.selected {
-  color: var(--main-color-font-blue) !important;
-  background: var(--main-color-blue-opacity) !important;
-  border-bottom: 0.0625rem solid var(--main-color-blue) !important;
+.tabs ul,
+#history ul {
+  border-bottom: 0.0625rem solid var(--second-color-gray2) !important;
+  padding-left: 0 !important;
 }
 
 .flash.notice#flash_notice {
@@ -242,4 +249,75 @@ select {
 #login-form input:-internal-autofill-selected::placeholder {
   -webkit-text-fill-color: var(--main-color-white) !important;
   color: var(--main-color-white) !important;
-} /*# sourceMappingURL=index.css.map */
+}
+
+#block-timelog {
+  border-radius: 0.5rem !important;
+  border: 0.0625rem solid var(--second-color-gray2) !important;
+}
+#block-timelog .nodata {
+  background-color: var(--second-color-dark) !important;
+  color: var(--main-color-grey) !important;
+}
+
+fieldset#filters, fieldset#options {
+  border: unset !important;
+  border-top: 0.0625rem solid var(--second-color-gray2) !important;
+  border-bottom: 0.0625rem solid var(--second-color-gray2) !important;
+}
+
+#projects-index .projects.root li.root {
+  border-radius: 0.5rem !important;
+  border: 0.0625rem solid var(--second-color-gray2) !important;
+}
+#projects-index .projects.root li.root ul.projects {
+  border-left: 3px solid var(--second-color-gray2);
+}
+
+.priority-class-1, tr.priority-6 .tracker, tr.priority-5 .tracker {
+  font-weight: 700;
+  color: #000 !important;
+}
+
+.priority-class-2, tr.priority-3 .tracker {
+  font-weight: 700;
+  color: var(--main-color-white) !important;
+}
+
+tr.priority-5 .tracker {
+  background-color: var(--main-color-priority-5) !important;
+}
+
+tr.priority-6 .tracker {
+  background-color: var(--main-color-priority-6) !important;
+}
+
+tr.priority-3 .tracker {
+  background-color: var(--main-color-priority-3) !important;
+}
+
+.pagination .pages li {
+  border-color: var(--second-color-gray2) !important;
+}
+.pagination .pages li.current {
+  background: var(--main-color-white) !important;
+}
+.pagination .pages li.current * {
+  color: var(--main-color-dark) !important;
+}
+
+.box.filedroplistner fieldset {
+  border-radius: 0.5rem !important;
+  border: 0.0625rem solid var(--second-color-gray2) !important;
+}
+.box.filedroplistner fieldset .jstEditor textarea,
+.box.filedroplistner fieldset .jstEditor .wiki.wiki-preview {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--second-color-gray) !important;
+  color: var(--main-color-grey) !important;
+  font-size: 17px !important;
+  border-radius: 0 0 0.5rem 0.5rem !important;
+  border: 0.0625rem solid var(--second-color-gray2) !important;
+}/*# sourceMappingURL=index.css.map */
