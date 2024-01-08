@@ -1,0 +1,237 @@
+:root {
+  --main-color-dark: rgb(20, 21, 23);
+  --main-color-white: rgb(117, 117, 117);
+  --main-color-grey: rgb(144, 146, 150);
+  --second-color-dark: rgb(26, 27, 30);
+  --second-color-gray: rgb(37, 38, 43);
+  --second-color-gray2: rgb(55, 58, 64);
+  --main-color-blue: rgb(51, 154, 240);
+  --main-color-blue-opacity: rgba(24, 100, 171, 0.45);
+  --main-color-font-blue: rgb(208, 235, 255);
+}
+
+#main,
+#footer,
+#content,
+#wrapper,
+body {
+  background-color: var(--main-color-dark) !important;
+}
+
+th,
+td {
+  background-color: var(--second-color-dark) !important;
+  border: solid 1px var(--second-color-gray) !important;
+}
+
+#wrapper td a {
+  color: var(--main-color-grey) !important;
+}
+
+* {
+  color: var(--main-color-grey) !important;
+}
+
+#footer {
+  border-top: 0.0625rem solid var(--second-color-gray) !important;
+}
+
+#header {
+  background-color: var(--second-color-dark) !important;
+}
+
+input {
+  border-radius: 0.5rem !important;
+  border: 0.0625rem solid var(--second-color-gray2) !important;
+  background-color: var(--second-color-gray) !important;
+}
+
+#list-top,
+#list-left,
+#list-right {
+  border: none !important;
+}
+
+#block-issuesassignedtome,
+#block-issuesreportedbyme {
+  border-radius: 0.5rem !important;
+  border: 1px solid var(--second-color-gray) !important;
+}
+
+#project-jump .drdn-trigger {
+  border-radius: 0.5rem !important;
+  border: 0.0625rem solid var(--second-color-gray2) !important;
+  background-color: var(--second-color-gray) !important;
+}
+
+#block-select {
+  border-radius: 0.5rem !important;
+  border: 0.0625rem solid var(--second-color-gray2) !important;
+  background: var(--second-color-gray) url("https://tasks.msocialproduction.com/images/arrow_down.png") no-repeat 97% 50% !important;
+}
+
+.drdn-content {
+  border-radius: 0.5rem !important;
+  border: 0.0625rem solid var(--second-color-gray2) !important;
+  background-color: var(--second-color-dark) !important;
+}
+
+.drdn-content a,
+.drdn-content strong,
+.drdn-items.projects.selection {
+  border: 0.0625rem solid var(--second-color-gray2) !important;
+}
+
+.drdn-items.all-projects.selection {
+  border-top: 0.0625rem solid var(--second-color-gray2) !important;
+}
+
+.box {
+  border: 0.0625rem solid var(--second-color-gray2) !important;
+  background-color: var(--second-color-dark) !important;
+}
+
+#main-menu {
+  background-color: var(--second-color-dark) !important;
+}
+
+#new-object {
+  border-radius: 0.5rem !important;
+  border: 0.0625rem solid var(--second-color-gray2) !important;
+  background-color: var(--second-color-gray) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0 !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+#wrapper a {
+  transition: all 0.3s ease 0s;
+}
+@media (any-hover: hover) {
+  #wrapper a:hover {
+    color: var(--main-color-white) !important;
+  }
+}
+
+div .issue {
+  border: 0.0625rem solid var(--second-color-gray2) !important;
+  background-color: var(--second-color-dark) !important;
+}
+
+hr {
+  background: var(--second-color-gray2) !important;
+}
+
+#sidebar {
+  border-left: 0.0625rem solid var(--second-color-gray2) !important;
+  background: var(--main-color-dark) !important;
+}
+
+#history div ul {
+  border-bottom: 0.0625rem solid var(--second-color-gray2) !important;
+  padding-left: 0 !important;
+}
+#history div ul li a {
+  background: none !important;
+  border: none !important;
+  padding-bottom: 10px !important;
+  transition: all 0.3s ease 0s;
+  border-radius: 0 !important;
+  border-bottom: 0.0625rem solid transparent !important;
+}
+#history div ul li a.selected {
+  color: var(--main-color-font-blue) !important;
+  background: var(--main-color-blue-opacity) !important;
+  border-bottom: 0.0625rem solid var(--main-color-blue) !important;
+}
+
+.flash.notice#flash_notice {
+  border-radius: 0.5rem !important;
+  color: white !important;
+  background: var(--main-color-blue) !important;
+}
+
+.note-header {
+  border-bottom: 0.0625rem solid var(--second-color-gray2) !important;
+}
+
+select {
+  border-radius: 0.5rem !important;
+  border: 0.0625rem solid var(--second-color-gray2) !important;
+  background: var(--second-color-gray) url("https://tasks.msocialproduction.com/images/arrow_down.png") no-repeat 97% 50% !important;
+}
+
+#main {
+  position: relative;
+  margin-right: -20px;
+  padding-left: 15px !important;
+  padding-bottom: 100px !important;
+}
+#main::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 44px;
+  height: 47px;
+  animation-name: change;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  background: url("https://firebasestorage.googleapis.com/v0/b/trakcer-29fd3.appspot.com/o/image%20(2).gif?alt=media&token=364f0b0d-adda-49e2-b8f9-e16a38814534") no-repeat;
+  z-index: 1;
+}
+#main::after {
+  content: "";
+  width: 100%;
+  height: 70px;
+  z-index: 0;
+  background: rgb(0, 0, 0);
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+@keyframes change {
+  0% {
+    transform: translate(0, 0);
+    left: 0%;
+  }
+  50% {
+    transform: translate(-44px, 0);
+    left: 100%;
+  }
+  50.01% {
+    transform: translate(-44px, 0) scaleX(-1);
+  }
+  100% {
+    transform: translate(0, 0) scaleX(-1);
+    left: 0%;
+  }
+}
+#login-form {
+  border-radius: 0.5rem !important;
+  border: 0.0625rem solid var(--second-color-gray2) !important;
+  background-color: var(--second-color-dark) !important;
+  color: var(--main-color-white) !important;
+}
+#login-form input {
+  color: var(--main-color-white) !important;
+  border: 0.0625rem solid var(--second-color-gray2) !important;
+}
+#login-form input:-internal-autofill-selected {
+  color: var(--main-color-white) !important;
+  -webkit-text-fill-color: var(--main-color-white) !important;
+  box-shadow: inset 0 0 0 1000px var(--second-color-gray);
+}
+#login-form input:-internal-autofill-selected::-moz-placeholder {
+  -webkit-text-fill-color: var(--main-color-white) !important;
+  color: var(--main-color-white) !important;
+}
+#login-form input:-internal-autofill-selected::placeholder {
+  -webkit-text-fill-color: var(--main-color-white) !important;
+  color: var(--main-color-white) !important;
+}/*# sourceMappingURL=index.css.map */
